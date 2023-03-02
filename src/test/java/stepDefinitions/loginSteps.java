@@ -50,6 +50,9 @@ public class loginSteps {
 		if(testDataType.equals("valid")) {
 			WebElement loginText=driver.findElement(By.cssSelector(".title"));
 			String actualText=loginText.getText();
+			
+			System.out.println(actualText);
+			
 			String expText="PRODUCTS";
 			Assert.assertEquals(actualText, expText);
 			
