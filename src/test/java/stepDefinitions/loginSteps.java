@@ -59,8 +59,8 @@ public class loginSteps {
 			String errTextActual=errText.getText();
 			String errTextExpected="Epic sadface: Username and password do not match any user in this service";
 			Assert.assertEquals(errTextActual, errTextExpected);
-			driver.quit();
+			
 		}
+		driver.quit();
 	   }
-
-}
+	}
